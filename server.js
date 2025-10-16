@@ -2,12 +2,17 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// Sert les fichiers statiques (APK, JSON)
-app.use('/downloads', express.static(path.join(__dirname, 'public')));
+// Sert les fichiers statiques dans le dossier racine
+app.use(express.static(path.join(__dirname)));
 
-// Route pour la version
+// Route explicite pour /version
 app.get('/version', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/version.json'));
+  res.sendFile(path.join(__dirname, 'version.json'));
+});
+
+// Route explicite pour /download (APK)
+app.get('/download', (req, res) => {
+  res.sendFile(path.join(__dirname, 'app-release.apk'));
 });
 
 // Démarrage du serveur
