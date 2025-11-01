@@ -1,4 +1,7 @@
 {
-  "version": "1.7.0",
-  "apk_url": "https://www.dropbox.com/scl/fi/z5bbnvry9fdfqc58h7hpn/app-release.apk?rlkey=17eoaogda2343xijuukl8bcrp&st=68won16w&dl=1"
+  "version": "2.0.0",
+  "downloadUrl": "https://www.dropbox.com/scl/fi/z5bbnvry9fdfqc58h7hpn/app-release.apk?rlkey=17eoaogda2343xijuukl8bcrp&st=68won16w&dl=1",
+  "releaseNotes": "✨ Nouvelles fonctionnalités\n🐛 Corrections de bugs\n⚡ Améliorations de performance",
+  "isForced": false,
+  "apkSize": 25600000
 }
